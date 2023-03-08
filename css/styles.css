@@ -14,16 +14,16 @@
   padding: 2%;
 }
 
-video{
-  height: 100%;
+ .background-video{
   width: 100%;
   position: relative;
   top: 4rem;
-  z-index: -2;
+  z-index: -4;
 }
 
 .navbar-expand-lg .bg-body-tertiary{
   opacity: 90%;
+  bottom: 0px;
 }
 .bg-body-tertiary {
   --bs-bg-opacity: 1;
@@ -53,5 +53,12 @@ video{
   margin: 0 ;
   padding: 0;
 }
+.h1{
+ top: 950px; 
+}
+.promo{
+  top: 600px;
+  text-align: center;
+  position: relative;
 
-
+}
