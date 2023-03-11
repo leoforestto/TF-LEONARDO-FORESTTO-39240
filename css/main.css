@@ -1,0 +1,382 @@
+/*NAVBAR*/
+.header{
+    position: relative !important;
+  }
+  
+  
+  .mb-lg-01{
+    margin-right: 2% !important;
+    margin-bottom: 0 !important;
+    margin-left: 2%;
+    right: 2px;
+  }
+  
+  .btn-outline-success{
+    --bs-btn-color: #fff;
+    --bs-btn-border-color: #fff;
+  }
+  
+  .btn-outline-primary {
+    color: #fff;
+    background-color: #000000;
+    border-color: #2c4a54;
+  }
+  .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #2c4a54;
+    border-color: #2c4a54;
+  }
+  .btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
+    color: #fff;
+    background-color: #2c4a54;
+    border-color: #2c4a54;
+    box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+  }
+  
+  .mb-lg-0{
+    padding: 2%  !important;
+    margin-right: 500px !important;
+    
+  }
+
+  .navbar-expand-lg .bg-body-tertiary{
+    opacity: 90%;
+    bottom: 0px;
+  }
+  .bg-body-tertiary {
+    
+    border-bottom: #fff;
+    border-style:solid;
+    border-width: 0;
+    }
+  
+  .nav-link{
+    font-size: 1.25rem;
+  }
+  
+  
+  
+  @media (max-width: 430px) {
+    .img-responsive{
+      width: 90px !important;
+    }
+    }
+  
+    @media (max-width: 391px) {
+      .img-responsive{
+        width: 80px !important;
+      }
+      }
+  
+  .navbar-brand{
+    margin: 0 ;
+    padding: 0;
+  }
+
+
+
+  /*INICIO*/
+  header.masthead {
+    position: relative;
+    background-color: #343a40;
+    background: url(../exit/bg-masthead.jpg) no-repeat center center;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    top: 8rem;
+  }
+  
+  header.masthead:before {
+    content: "";
+    position: absolute;
+    background-color: #1c375e;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+  }
+  header.masthead h1, header.masthead .h1 {
+    font-size: 2rem;
+  }
+  @media (min-width: 768px) {
+    header.masthead {
+      padding-top: 12rem;
+      padding-bottom: 12rem;
+    }
+    header.masthead h1, header.masthead .h1 {
+      font-size: 3rem;
+    }
+    
+  }
+  .features-icons {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    position: relative;
+    top: 8.2rem;
+    align-content: center;
+   
+  }
+  .features-icons .features-icons-item {
+    max-width: 20rem;
+  } 
+  .features-icons .features-icons-item .features-icons-icon {
+    height: 7rem;
+  }
+  .features-icons .features-icons-item .features-icons-icon i {
+    font-size: 4.5rem;
+  }
+  
+  footer.footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    position: static;
+    bottom: 0;
+  }
+  
+  .carousel-container {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+
+
+
+
+
+  /*INICIO*/
+
+#destinos-carousel .carousel-item {
+    height: 800px;
+  }
+  
+  #destinos-carousel .carousel-item img {
+    width: 100px;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  #destinos-carousel .carousel-item-next,
+  #destinos-carousel .carousel-item-prev,
+  #destinos-carousel .carousel-item.active {
+    display: flex;
+  }
+  
+  #destinos-carousel .carousel-item-next img,
+  #destinos-carousel .carousel-item-prev img,
+  #destinos-carousel .carousel-item.active img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+  #destinos-carousel .carousel-item-next {
+    transform: translateX(100%);
+  }
+  
+  #destinos-carousel .carousel-item-prev {
+    transform: translateX(-100%);
+  }
+
+
+  #contacto {
+    background-color: #f7f7f700;
+    padding-top: 20%;
+    padding-bottom: 5%;
+  
+  }
+  
+  #contacto h2 {
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  #contacto form {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 40px;
+    top: 20%;
+  }
+  
+  #contacto form label {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #contacto form input[type="text"],
+  #contacto form input[type="email"],
+  #contacto form textarea {
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  #contacto form input[type="text"]:focus,
+  #contacto form input[type="email"]:focus,
+  #contacto form textarea:focus {
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: #333;
+  }
+  
+  #contacto form .input-group-text {
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 0;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  #contacto form .btn {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #contacto form .btn:hover {
+    background-color: #6e6e6e;
+  }
+  
+  .dark {
+    background-image: url("../exit/ios-11-1920x1080-4k-5k-beach-ocean-13655.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .dark {
+    /* Cambiamos el color del texto a blanco */
+    color: #000000;
+    
+    /* Cambiamos el color de fondo a negro */
+    background-color: #ded2d2;
+  }
+  
+  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    /* Cambiamos el color de los títulos a blanco */
+    color: #000000;
+  }
+  
+  .dark .btn {
+    /* Cambiamos el color de los botones a un gris oscuro */
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    
+  }
+
+.btn-link{
+    text-decoration: none !important;
+}
+
+.btn-link:hover{
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+  .dark input[type="text"], .dark input[type="email"], .dark input[type="tel"] {
+    /* Cambiamos el color de fondo y el color del texto de los campos de entrada */
+    background-color: #f7f7f7;
+    color: #000000;  
+  }
+  
+  /* Agregamos un estilo para el texto de las preguntas frecuentes */
+  .dark .faq-question {
+    color: #fff;
+  }
+  
+  /* Agregamos un estilo para el texto de las respuestas de las preguntas frecuentes */
+  .dark .faq-answer {
+    color: #ccc;
+  }
+  
+  .navbar {
+    background-color: #333;
+    font-size: 18px;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    color: #fff !important;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    color: #ccc !important;
+  }
+
+  /*BOTON DE WHATSAPP*/
+
+  .whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 48px;
+  line-height: 75px;
+  transition: all 0.2s ease-in-out;
+  z-index: 9999;
+}
+
+.whatsapp:hover {
+  background-color: #128c7e;
+}
+
+@media(max-width: 420px){
+    .whatsapp{
+        width: 60px;
+        height: 60px;
+        font-size: 35px;
+        line-height: 60px;
+    }
+}
+
+
+/*FLOTA*/
+
+
+  
+
+
+
+  
+  
+  
