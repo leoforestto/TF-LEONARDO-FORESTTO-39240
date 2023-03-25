@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Contacto</title>
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="../css/main.css">
  <!--ICONOS--> <!--VAN ABAJO DE LOS HREF-->
 	 
  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -24,46 +24,69 @@
 
 
 <!--Inicio va a ser una imagen de la marca que funcione como boton (a diseñar)-->
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme= "dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="/exit/logo.png" alt="Logo de la emrpesa" class="img-responsive"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Destinos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="flota.html">Nuestra flota</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                Contacto
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="contacto.html">Formulario de contacto</a></li>
-                <li><a class="dropdown-item" href="#">Ventas</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Soporte</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search" action="#" method="get" enctype="application/x-www-form-urlencoded">
-            <input class="form-control me-2" type="text" placeholder="Buscar" aria-label="search">
-            <button class="btn btn-outline-primary" type="submit">Buscar</button>
-          </form>
-          
-          <ul class="navbar-nav mb-2 mb-lg-01">
-              <li class="nav-item">
-                  <a class="nav-link usuario" href="/paginas/usuario.html"><i class='bx bx-log-in' ></i> Usuario</box-icon></a>
-              </li>
-          </ul>
 
-        </div>
+
+<section class="section bg-white pb-0"  >
+  <div class="container">
+   
+    <div class="row check-availabilty" id="next">
+      <div class="block-32" data-aos="fade-up" data-aos-offset="-200">
+
+        <form action="#">
+          <div class="row">
+            <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
+              <label for="checkin_date" class="font-weight-bold text-black">Check In</label>
+              <div class="field-icon-wrap">
+                <div class="icon"><span class="icon-calendar"></span></div>
+                <input type="date" id="checkin_date" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
+              <label for="checkout_date" class="font-weight-bold text-black">Check Out</label>
+              <div class="field-icon-wrap">
+                <div class="icon"><span class="icon-calendar"></span></div>
+                <input type="date" id="checkout_date" class="form-control">
+              </div>
+            </div>
+            <div class="col-md-6 mb-3 mb-md-0 col-lg-3">
+              <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label for="adults" class="font-weight-bold text-black">Adults</label>
+                  <div class="field-icon-wrap">
+                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                    <select name="" id="adults" class="form-control">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4+</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label for="children" class="font-weight-bold text-black">Children</label>
+                  <div class="field-icon-wrap">
+                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                    <select name="" id="children" class="form-control">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4+</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 align-self-end">
+              <button class="btn btn-lg btn-primary">Check Availabilty</button>
+            </div>
+          </div>
+        </form>
       </div>
-</nav>	
+
+
+    </div>
+  </div>
+</section>
 
 
 <body>
