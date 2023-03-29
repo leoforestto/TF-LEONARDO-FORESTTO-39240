@@ -222,7 +222,7 @@ iframe{
     padding-top: 8rem;
     padding-bottom: 8rem;
     position: relative;
-    top: 6.2rem;
+    top: 6.3rem;
     align-content: center;
    
   }
@@ -283,6 +283,7 @@ iframe{
   
   #contacto form input[type="text"],
   #contacto form input[type="email"],
+  #contacto form input[type="tel"],
   #contacto form textarea {
     background-color: #f7f7f7;
     border: black;
@@ -299,6 +300,7 @@ iframe{
   
   #contacto form input[type="text"]:focus,
   #contacto form input[type="email"]:focus,
+  #contacto form input[type="tel"]:focus,
   #contacto form textarea:focus {
     background-color: #f7f7f7;
     border: black;
@@ -315,6 +317,8 @@ iframe{
     color: #333;
     font-size: 16px;
   }
+
+
   
   #contacto form .btn {
     background-color: #333;
