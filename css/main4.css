@@ -477,3 +477,18 @@
     margin-bottom: 15px;
     display: block
 }
+
+
+.breadcam_bg{background-image:url(../exit/img/banner/bradcam.png)}
+
+.breadcam_bg_1{background-image:url(../exit/img/banner/bradcam2.png)}
+
+.breadcam_bg_2{background-image:url(../exit/img/banner/banner.png)}
+
+.bradcam_area{padding:170px;background-size:cover;background-position:center center;text-align:center;padding:269px 0 159px 0}
+
+@media (max-width: 767px){.bradcam_area{padding:150px 0}}
+
+.bradcam_area h3{font-size:60px;color:#fff;font-weight:400;margin-bottom:0;text-transform:capitalize}
+
+@media (max-width: 767px){.bradcam_area h3{font-size:30px}}
