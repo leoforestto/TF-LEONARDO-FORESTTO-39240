@@ -637,6 +637,8 @@ iframe{
   height: 100%;
   background-image:url("../exit/DESTINOS/ALASKA.jpg");
   background-size: cover;
+  color: #14a422;  
+  
 }
 
 #Dest-top-left{
@@ -645,12 +647,12 @@ iframe{
 }
 
 #Dest-top-mid{
-  background-image: url("../exit/DESTINOS/TAILANDIA.jpg");
+  background-image: url("../exit/DESTINOS/SUDAMERICA.jpg");
   background-size: cover;
 }
 
 #Dest-top-right{
-  background-image: url("../exit/DESTINOS/SUDAMERICA.jpg");
+  background-image: url("../exit/DESTINOS/TAILANDIA.jpg");
   background-size: cover;
 }
 
@@ -659,6 +661,10 @@ background-image: url("../exit/DESTINOS/MEDITERRANEO.jpg");
 background-size: cover;
 }
 
+#Dest-bot-mid{
+  background-image: url(../exit/DESTINOS/AMALFI.jpg);
+  background-size: cover;
+}
 
 
 .services .icon-box:hover {
@@ -686,20 +692,23 @@ background-size: cover;
 }
 
 .services .title a {
-  color: #2a2c39;
+  color: #fff;
   transition: ease-in-out 0.3s;
  }
 
 .services .title a:hover {
-  color: #ef6603;
+  color: #fff;
 }
 
 .services .description {
-  font-size: 14px;
+  font-size: 17px;
   margin-left: 40px;
   line-height: 24px;
   margin-bottom: 0;
-}
+  font-weight: 600;
+  color: white;
+  }
+
 
 /*--------------------------------------------------------------
 # Contact Me
@@ -1007,10 +1016,16 @@ background-size: cover;
         textarea.form-control {
           height: inherit; }
 
+
+          .flota-container{
+
+            padding-top: 15%;
+          } 
+
 /*DIV DE 5 FOTOS*/
 
 .instragram_area{
-  
+  padding-top: 6%;
   width: 100%;
   display:block;
   overflow:hidden}
