@@ -1,0 +1,151 @@
+/*PAGINA DE CONTACTO*/
+
+
+.body-contacto {
+    background-image: url("../exit/ios-11-1920x1080-4k-5k-beach-ocean-13655.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .dark {
+    color: #000000;
+    background-color: #ded2d2;
+  }
+  
+  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    color: #000000;
+  }
+  
+  .dark .btn {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    }
+
+.btn-link{
+    text-decoration: none !important;
+}
+
+.btn-link:hover{
+    text-decoration: none !important;
+    color: #fff !important;
+    background-color: #000000 !important;
+}
+
+  .dark input[type="text"], .dark input[type="email"], .dark input[type="tel"] {
+    /* Color de fondo y el color del texto de los campos de entrada */
+    background-color: #f7f7f7;
+    color: #000000;  
+  }
+  
+  /* Texto de las preguntas frecuentes */
+  .dark .faq-question {
+    color: #fff;
+  }
+  
+  /* Texto de las respuestas de las preguntas frecuentes */
+  .dark .faq-answer {
+    color: #ccc;
+  }
+  
+  .navbar {
+    background-color: #333;
+    font-size: 18px;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    color: #fff !important;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    color: #ccc !important;
+  }
+
+  #contacto {
+    background-color: #f7f7f700;
+    padding-top: 20%;
+    padding-bottom: 5%;
+  
+  }
+  
+  #contacto h2 {
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  #contacto form {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 40px;
+    top: 20%;
+  }
+  
+  #contacto form label {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #contacto form input[type="text"],
+  #contacto form input[type="email"],
+  #contacto form input[type="tel"],
+  #contacto form textarea {
+    background-color: #f7f7f7;
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0;
+    box-shadow: none;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  #contacto form input[type="text"]:focus,
+  #contacto form input[type="email"]:focus,
+  #contacto form input[type="tel"]:focus,
+  #contacto form textarea:focus {
+    background-color: #f7f7f7;
+    border: black;
+    border-style: solid;
+    border-radius: 0;
+    box-shadow: none;
+    color: #333;
+  }
+  
+  #contacto form .input-group-text {
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 0;
+    color: #333;
+    font-size: 16px;
+  }
+
+
+  
+  #contacto form .btn {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #contacto form .btn:hover {
+    background-color: #333;
+  }

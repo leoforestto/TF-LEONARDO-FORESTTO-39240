@@ -1,0 +1,98 @@
+#sesion {
+    background-color: #f7f7f700;
+    padding-top: 10%;
+    padding-bottom: 5%;
+  
+  }
+
+  @media (max-width: 768px){
+    #sesion {
+    width: 100%;  
+    padding-top: 15vh;    
+    }
+  }
+
+  @media (min-width: 432px){
+    #sesion {
+    width: 100%; 
+    padding-top: 20vh;     
+    }
+  }
+
+  #sesion h2 {
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  #sesion form {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 40px;
+    top: 20%;
+  }
+  
+  #sesion form label {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #sesion form input[type="text"],
+  #sesion form input[type="email"],
+  #sesion form textarea {
+    background-color: #f7f7f7;
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0;
+    box-shadow: none;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  #sesion form input[type="text"]:focus,
+  #sesion form input[type="email"]:focus,
+  #sesion form textarea:focus {
+    background-color: #f7f7f7;
+    border: black;
+    border-style: solid;
+    border-radius: 0;
+    box-shadow: none;
+    color: #333;
+  }
+  
+  #sesion form .input-group-text {
+    background-color: #f7f7f7;
+    border: none;
+    border-radius: 0;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  #contacto form .btn {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #sesion form .btn:hover {
+    background-color: #333;
+  }
+  
+  .body-user{
+    background-image: url("../exit/3695065.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

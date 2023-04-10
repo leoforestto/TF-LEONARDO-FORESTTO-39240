@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -26,6 +25,35 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+/*BOTON DE WHATSAPP*/
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 48px;
+  line-height: 75px;
+  transition: all 0.2s ease-in-out;
+  z-index: 9999;
+}
+
+.whatsapp:hover {
+  background-color: #128c7e;
+}
+
+@media (max-width: 420px) {
+  .whatsapp {
+    width: 60px;
+    height: 60px;
+    font-size: 35px;
+    line-height: 60px;
+  }
+}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -172,73 +200,169 @@ iframe {
   font-size: 13px;
 }
 
-/*INDEX*/
-header.masthead {
-  position: relative;
-  background-color: #3078c1;
-  background: url(../exit/bg-masthead.jpg) no-repeat center center;
-  background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 3rem;
-  top: 8rem;
+#sesion {
+  background-color: rgba(247, 247, 247, 0);
+  padding-top: 10%;
+  padding-bottom: 5%;
 }
 
-.bg-light {
-  background: #128c7e !important;
+@media (max-width: 768px) {
+  #sesion {
+    width: 100%;
+    padding-top: 15vh;
+  }
+}
+@media (min-width: 432px) {
+  #sesion {
+    width: 100%;
+    padding-top: 20vh;
+  }
+}
+#sesion h2 {
+  color: #333;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
-header.masthead:before {
-  content: "";
-  position: absolute;
-  background-color: #1c375e !important;
-  height: 100%;
+#sesion form {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 40px;
+  top: 20%;
+}
+
+#sesion form label {
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#sesion form input[type=text],
+#sesion form input[type=email],
+#sesion form textarea {
+  background-color: #f7f7f7;
+  border: black;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0;
+  box-shadow: none;
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 15px;
   width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.5;
 }
 
-header.masthead h1, header.masthead .h1 {
-  font-size: 2rem;
+#sesion form input[type=text]:focus,
+#sesion form input[type=email]:focus,
+#sesion form textarea:focus {
+  background-color: #f7f7f7;
+  border: black;
+  border-style: solid;
+  border-radius: 0;
+  box-shadow: none;
+  color: #333;
 }
 
-@media (min-width: 768px) {
-  header.masthead {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
-  }
-  header.masthead h1, header.masthead .h1 {
-    font-size: 3rem;
-  }
-}
-.features-icons {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  position: relative;
-  top: 6.3rem;
-  align-content: center;
+#sesion form .input-group-text {
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 0;
+  color: #333;
+  font-size: 16px;
 }
 
-.features-icons .features-icons-item {
-  max-width: 20rem;
+#contacto form .btn {
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 30px;
+  transition: background-color 0.3s ease;
 }
 
-.features-icons .features-icons-item .features-icons-icon {
-  height: 7rem;
+#sesion form .btn:hover {
+  background-color: #333;
 }
 
-.features-icons .features-icons-item .features-icons-icon i {
-  font-size: 4.5rem;
+.body-user {
+  background-image: url("../exit/3695065.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-footer.footer {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  position: static;
-  bottom: 0;
+/*PAGINA DE CONTACTO*/
+.body-contacto {
+  background-image: url("../exit/ios-11-1920x1080-4k-5k-beach-ocean-13655.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/*CONTACTO*/
+.dark {
+  color: #000000;
+  background-color: #ded2d2;
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: #000000;
+}
+
+.dark .btn {
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-link {
+  text-decoration: none !important;
+}
+
+.btn-link:hover {
+  text-decoration: none !important;
+  color: #fff !important;
+  background-color: #000000 !important;
+}
+
+.dark input[type=text], .dark input[type=email], .dark input[type=tel] {
+  /* Color de fondo y el color del texto de los campos de entrada */
+  background-color: #f7f7f7;
+  color: #000000;
+}
+
+/* Texto de las preguntas frecuentes */
+.dark .faq-question {
+  color: #fff;
+}
+
+/* Texto de las respuestas de las preguntas frecuentes */
+.dark .faq-answer {
+  color: #ccc;
+}
+
+.navbar {
+  background-color: #333;
+  font-size: 18px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #ccc !important;
+}
+
 #contacto {
   background-color: rgba(247, 247, 247, 0);
   padding-top: 20%;
@@ -319,517 +443,6 @@ footer.footer {
   background-color: #333;
 }
 
-.body-contacto {
-  background-image: url("../exit/ios-11-1920x1080-4k-5k-beach-ocean-13655.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.dark {
-  /* Cambiamos el color del texto a blanco */
-  color: #000000;
-  /* Cambiamos el color de fondo a negro */
-  background-color: #ded2d2;
-}
-
-.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
-  /* Cambiamos el color de los títulos a blanco */
-  color: #000000;
-}
-
-.dark .btn {
-  /* Cambiamos el color de los botones a un gris oscuro */
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-}
-
-.btn-link {
-  text-decoration: none !important;
-}
-
-.btn-link:hover {
-  text-decoration: none !important;
-  color: #fff !important;
-  background-color: #000000 !important;
-}
-
-.dark input[type=text], .dark input[type=email], .dark input[type=tel] {
-  /* Cambiamos el color de fondo y el color del texto de los campos de entrada */
-  background-color: #f7f7f7;
-  color: #000000;
-}
-
-/* Agregamos un estilo para el texto de las preguntas frecuentes */
-.dark .faq-question {
-  color: #fff;
-}
-
-/* Agregamos un estilo para el texto de las respuestas de las preguntas frecuentes */
-.dark .faq-answer {
-  color: #ccc;
-}
-
-.navbar {
-  background-color: #333;
-  font-size: 18px;
-}
-
-.navbar-brand {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.nav-link {
-  color: #fff !important;
-  font-weight: bold;
-}
-
-.nav-link:hover {
-  color: #ccc !important;
-}
-
-/*BOTON DE WHATSAPP*/
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  text-align: center;
-  font-size: 48px;
-  line-height: 75px;
-  transition: all 0.2s ease-in-out;
-  z-index: 9999;
-}
-
-.whatsapp:hover {
-  background-color: #128c7e;
-}
-
-@media (max-width: 420px) {
-  .whatsapp {
-    width: 60px;
-    height: 60px;
-    font-size: 35px;
-    line-height: 60px;
-  }
-}
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-#hero {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  background: linear-gradient(0deg, rgb(243, 242, 240) 0%, rgb(255, 255, 255) 100%);
-  padding: 0;
-  margin-top: 10vh;
-  color: rgb(255, 183, 39);
-  color: hwb(195 17% 67%);
-}
-
-#slide1 {
-  background-image: url(../exit/DESTINOS/MEDITERRANEO.jpg);
-  background-size: cover;
-  border-style: none;
-}
-
-#slide2 {
-  background-image: url(../exit/DESTINOS/EMIRIATOS\ ARABES.jpg);
-  background-size: cover;
-  border-style: none;
-}
-
-#slide3 {
-  background-image: url(../exit/DESTINOS/ALASKA.jpg);
-  background-size: cover;
-  border-style: none;
-}
-
-#hero .carousel-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  position: relative;
-  height: 50vh;
-  padding-top: 60px;
-}
-
-#hero h2 {
-  color: #fff;
-  margin-bottom: 30px;
-  font-size: 48px;
-  font-weight: 700;
-}
-
-#hero p {
-  width: 80%;
-  animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
-  color: #fff;
-}
-
-#hero .carousel-control-prev,
-#hero .carousel-control-next {
-  width: 10%;
-}
-
-#hero .carousel-control-prev-icon {
-  background: none;
-  font-size: 48px;
-  line-height: 1;
-  width: auto;
-  height: auto;
-  padding-right: 10vw;
-}
-
-#hero .carousel-control-next-icon {
-  background: none;
-  font-size: 48px;
-  line-height: 1;
-  width: auto;
-  height: auto;
-  padding-left: 10vw;
-}
-
-#hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 50px;
-  transition: 0.5s;
-  line-height: 1;
-  margin: 10px;
-  color: #fff;
-  animation-delay: 0.8s;
-  border: 2px solid #ef6603;
-}
-
-#hero .btn-get-started:hover {
-  background: #ef6603;
-  color: #fff;
-  text-decoration: none;
-}
-
-@media (min-width: 1024px) {
-  #hero p {
-    width: 60%;
-  }
-  #hero .carousel-control-prev,
-  #hero .carousel-control-next {
-    width: 5%;
-  }
-}
-@media (max-width: 768px) {
-  #hero .carousel-container {
-    height: 90vh;
-  }
-  #hero h2 {
-    font-size: 28px;
-  }
-}
-.hero-waves {
-  display: block;
-  width: 100%;
-  height: 60px;
-  position: relative;
-}
-
-.wave1 use {
-  animation: move-forever1 10s linear infinite;
-  animation-delay: -2s;
-}
-
-.wave2 use {
-  animation: move-forever2 8s linear infinite;
-  animation-delay: -2s;
-}
-
-.wave3 use {
-  animation: move-forever3 6s linear infinite;
-  animation-delay: -2s;
-}
-
-@keyframes move-forever1 {
-  0% {
-    transform: translate(85px, 0%);
-  }
-  100% {
-    transform: translate(-90px, 0%);
-  }
-}
-@keyframes move-forever2 {
-  0% {
-    transform: translate(-90px, 0%);
-  }
-  100% {
-    transform: translate(85px, 0%);
-  }
-}
-@keyframes move-forever3 {
-  0% {
-    transform: translate(-90px, 0%);
-  }
-  100% {
-    transform: translate(85px, 0%);
-  }
-}
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-#destinos-index {
-  margin-top: 0;
-}
-
-.services .icon-box {
-  padding: 30px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 2px 29px 0 rgba(68, 88, 144, 0.12);
-  transition: all 0.4s ease-in-out;
-  width: 100%;
-  height: 100%;
-  background-image: url("../exit/DESTINOS/ALASKA.jpg");
-  background-size: cover;
-  color: #14a422;
-}
-
-#Dest-top-left {
-  background-image: url("../exit/DESTINOS/EMIRIATOS ARABES.jpg");
-  background-size: cover;
-}
-
-#Dest-top-mid {
-  background-image: url("../exit/DESTINOS/SUDAMERICA.jpg");
-  background-size: cover;
-}
-
-#Dest-top-right {
-  background-image: url("../exit/DESTINOS/TAILANDIA.jpg");
-  background-size: cover;
-}
-
-#Dest-bot-left {
-  background-image: url("../exit/DESTINOS/MEDITERRANEO.jpg");
-  background-size: cover;
-}
-
-#Dest-bot-mid {
-  background-image: url(../exit/DESTINOS/AMALFI.jpg);
-  background-size: cover;
-}
-
-.services .icon-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 2px 35px 0 rgba(68, 88, 144, 0.2);
-}
-
-.services .icon {
-  position: absolute;
-  left: -20px;
-  top: calc(50% - 30px);
-}
-
-.services .icon i {
-  font-size: 64px;
-  line-height: 1;
-  transition: 0.5s;
-}
-
-.services .title {
-  margin-left: 40px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.services .title a {
-  color: #fff;
-  transition: ease-in-out 0.3s;
-}
-
-.services .title a:hover {
-  color: #fff;
-}
-
-.services .description {
-  font-size: 17px;
-  margin-left: 40px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-weight: 600;
-  color: white;
-}
-
-/*--------------------------------------------------------------
-# Contact Me
---------------------------------------------------------------*/
-.contact .info-box {
-  color: #444444;
-  text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 20px 0 30px 0;
-}
-
-.contact .info-box i.bx {
-  font-size: 24px;
-  color: #ffb727;
-  border-radius: 50%;
-  padding: 15px;
-  background: #fff6e4;
-}
-
-.contact .info-box h3 {
-  font-size: 20px;
-  color: #777777;
-  font-weight: 700;
-  margin: 10px 0;
-}
-
-.contact .info-box p {
-  padding: 0;
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.contact .social-links {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-}
-
-.contact .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  color: #687683;
-  line-height: 1;
-  margin: 0 8px;
-  transition: 0.3s;
-  padding: 14px;
-  border-radius: 50px;
-  border: 1px solid #dde1e4;
-}
-
-.contact .social-links a:hover {
-  color: #fff;
-  border-color: #ffb727;
-  background: #ffb727;
-}
-
-.contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 27px;
-}
-
-.contact .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
-}
-
-.btn-outline-primary, .btn-primary, .btn-outline-primary:hover, .btn-primary:hover {
-  background-color: #ffb727 !important;
-  outline: #ffb727 !important;
-  border-color: #ffb727 !important;
-  color: #fff;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-}
-
-.contact .php-email-form input::focus,
-.contact .php-email-form textarea::focus {
-  background-color: #ffb727;
-}
-
-.contact .php-email-form input {
-  padding: 10px 15px;
-}
-
-.contact .php-email-form textarea {
-  padding: 12px 15px;
-}
-
-.contact .php-email-form button[type=submit] {
-  background: #ffb727;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 5px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: #ffc85a;
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 /*FLOTA*/
 /*Texto izquierda*/
 .about .content h3 {
@@ -1093,157 +706,6 @@ textarea.form-control {
   transform: scaleX(1.1);
 }
 
-/*MAIN 2*/
-/*CONTACTO*/
-#sesion {
-  background-color: rgba(247, 247, 247, 0);
-  padding-top: 10%;
-  padding-bottom: 5%;
-}
-
-#sesion h2 {
-  color: #333;
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-#sesion form {
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 40px;
-  top: 20%;
-}
-
-#sesion form label {
-  color: #333;
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-#sesion form input[type=text],
-#sesion form input[type=email],
-#sesion form textarea {
-  background-color: #f7f7f7;
-  border: black;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0;
-  box-shadow: none;
-  color: #333;
-  font-size: 16px;
-  margin-bottom: 20px;
-  padding: 15px;
-  width: 100%;
-}
-
-#sesion form input[type=text]:focus,
-#sesion form input[type=email]:focus,
-#sesion form textarea:focus {
-  background-color: #f7f7f7;
-  border: black;
-  border-style: solid;
-  border-radius: 0;
-  box-shadow: none;
-  color: #333;
-}
-
-#sesion form .input-group-text {
-  background-color: #f7f7f7;
-  border: none;
-  border-radius: 0;
-  color: #333;
-  font-size: 16px;
-}
-
-#contacto form .btn {
-  background-color: #333;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 15px 30px;
-  transition: background-color 0.3s ease;
-}
-
-#sesion form .btn:hover {
-  background-color: #333;
-}
-
-.body-user {
-  background-image: url("../exit/3695065.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.dark {
-  /* Cambiamos el color del texto a blanco */
-  color: #000000;
-  /* Cambiamos el color de fondo a negro */
-  background-color: #ded2d2;
-}
-
-.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
-  /* Cambiamos el color de los títulos a blanco */
-  color: #000000;
-}
-
-.dark .btn {
-  /* Cambiamos el color de los botones a un gris oscuro */
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-}
-
-.btn-link {
-  text-decoration: none !important;
-}
-
-.btn-link:hover {
-  text-decoration: none !important;
-  color: #fff !important;
-  background-color: #000000 !important;
-}
-
-.dark input[type=text], .dark input[type=email], .dark input[type=tel] {
-  /* Cambiamos el color de fondo y el color del texto de los campos de entrada */
-  background-color: #f7f7f7;
-  color: #000000;
-}
-
-/* Agregamos un estilo para el texto de las preguntas frecuentes */
-.dark .faq-question {
-  color: #fff;
-}
-
-/* Agregamos un estilo para el texto de las respuestas de las preguntas frecuentes */
-.dark .faq-answer {
-  color: #ccc;
-}
-
-.navbar {
-  background-color: #333;
-  font-size: 18px;
-}
-
-.navbar-brand {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.nav-link {
-  color: #fff !important;
-  font-weight: bold;
-}
-
-.nav-link:hover {
-  color: #ccc !important;
-}
-
-/*MAIN 4*/
 .about_area {
   padding-top: 200px;
   padding-bottom: 100px;
@@ -1727,6 +1189,478 @@ textarea.form-control {
 @media (max-width: 767px) {
   .bradcam_area h3 {
     font-size: 30px;
+  }
+}
+/*INDEX*/
+header.masthead {
+  position: relative;
+  background-color: #3078c1;
+  background: url(../exit/bg-masthead.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+  top: 8rem;
+}
+
+.bg-light {
+  background: #128c7e !important;
+}
+
+header.masthead:before {
+  content: "";
+  position: absolute;
+  background-color: #1c375e !important;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+header.masthead h1, header.masthead .h1 {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead h1, header.masthead .h1 {
+    font-size: 3rem;
+  }
+}
+.features-icons {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  position: relative;
+  top: 6.3rem;
+  align-content: center;
+}
+
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  position: static;
+  bottom: 0;
+}
+
+/*-- INDEX HERO --*/
+#hero {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(0deg, rgb(243, 242, 240) 0%, rgb(255, 255, 255) 100%);
+  padding: 0;
+  margin-top: 10vh;
+  color: rgb(255, 183, 39);
+  color: hwb(195 17% 67%);
+}
+
+#slide1 {
+  background-image: url(../exit/DESTINOS/MEDITERRANEO.jpg);
+  background-size: cover;
+  border-style: none;
+}
+
+#slide2 {
+  background-image: url(../exit/DESTINOS/EMIRIATOS\ ARABES.jpg);
+  background-size: cover;
+  border-style: none;
+}
+
+#slide3 {
+  background-image: url(../exit/DESTINOS/ALASKA.jpg);
+  background-size: cover;
+  border-style: none;
+}
+
+#hero .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  height: 50vh;
+  padding-top: 60px;
+}
+
+#hero h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#hero p {
+  width: 80%;
+  animation-delay: 0.4s;
+  margin: 0 auto 30px auto;
+  color: #fff;
+}
+
+#hero .carousel-control-prev,
+#hero .carousel-control-next {
+  width: 10%;
+}
+
+#hero .carousel-control-prev-icon {
+  background: none;
+  font-size: 48px;
+  line-height: 1;
+  width: auto;
+  height: auto;
+  padding-right: 10vw;
+}
+
+#hero .carousel-control-next-icon {
+  background: none;
+  font-size: 48px;
+  line-height: 1;
+  width: auto;
+  height: auto;
+  padding-left: 10vw;
+}
+
+#hero .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  animation-delay: 0.8s;
+  border: 2px solid #ef6603;
+}
+
+#hero .btn-get-started:hover {
+  background: #ef6603;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  #hero p {
+    width: 60%;
+  }
+  #hero .carousel-control-prev,
+  #hero .carousel-control-next {
+    width: 5%;
+  }
+}
+@media (max-width: 768px) {
+  #hero .carousel-container {
+    height: 90vh;
+  }
+  #hero h2 {
+    font-size: 28px;
+  }
+}
+.hero-waves {
+  display: block;
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+
+.wave1 use {
+  animation: move-forever1 10s linear infinite;
+  animation-delay: -2s;
+}
+
+.wave2 use {
+  animation: move-forever2 8s linear infinite;
+  animation-delay: -2s;
+}
+
+.wave3 use {
+  animation: move-forever3 6s linear infinite;
+  animation-delay: -2s;
+}
+
+@keyframes move-forever1 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+@keyframes move-forever2 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+@keyframes move-forever3 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+/*-- SERVICES --*/
+#destinos-index {
+  margin-top: 0;
+}
+
+.services .icon-box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+  height: 100%;
+  background-image: url("../exit/DESTINOS/ALASKA.jpg");
+  background-size: cover;
+  color: #14a422;
+}
+
+#Dest-top-left {
+  background-image: url("../exit/DESTINOS/EMIRIATOS ARABES.jpg");
+  background-size: cover;
+}
+
+#Dest-top-mid {
+  background-image: url("../exit/DESTINOS/SUDAMERICA.jpg");
+  background-size: cover;
+}
+
+#Dest-top-right {
+  background-image: url("../exit/DESTINOS/TAILANDIA.jpg");
+  background-size: cover;
+}
+
+#Dest-bot-left {
+  background-image: url("../exit/DESTINOS/MEDITERRANEO.jpg");
+  background-size: cover;
+}
+
+#Dest-bot-mid {
+  background-image: url(../exit/DESTINOS/AMALFI.jpg);
+  background-size: cover;
+}
+
+.services .icon-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 2px 35px 0 rgba(68, 88, 144, 0.2);
+}
+
+.services .icon {
+  position: absolute;
+  left: -20px;
+  top: calc(50% - 30px);
+}
+
+.services .icon i {
+  font-size: 64px;
+  line-height: 1;
+  transition: 0.5s;
+}
+
+.services .title {
+  margin-left: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .title a {
+  color: #fff;
+  transition: ease-in-out 0.3s;
+}
+
+.services .title a:hover {
+  color: #fff;
+}
+
+.services .description {
+  font-size: 17px;
+  margin-left: 40px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-weight: 600;
+  color: white;
+}
+
+/*-- INDEX CONTACTO --*/
+.contact .info-box {
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+}
+
+.contact .info-box i.bx {
+  font-size: 24px;
+  color: #ffb727;
+  border-radius: 50%;
+  padding: 15px;
+  background: #fff6e4;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.contact .social-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  color: #687683;
+  line-height: 1;
+  margin: 0 8px;
+  transition: 0.3s;
+  padding: 14px;
+  border-radius: 50px;
+  border: 1px solid #dde1e4;
+}
+
+.contact .social-links a:hover {
+  color: #fff;
+  border-color: #ffb727;
+  background: #ffb727;
+}
+
+.contact .php-email-form {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 27px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.btn-outline-primary, .btn-primary, .btn-outline-primary:hover, .btn-primary:hover {
+  background-color: #ffb727 !important;
+  outline: #ffb727 !important;
+  border-color: #ffb727 !important;
+  color: #fff;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input::focus,
+.contact .php-email-form textarea::focus {
+  background-color: #ffb727;
+}
+
+.contact .php-email-form input {
+  padding: 10px 15px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #ffb727;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 5px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #ffc85a;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
