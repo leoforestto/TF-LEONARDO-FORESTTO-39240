@@ -1,206 +1,201 @@
 body {
-    font-family: "Open Sans", sans-serif;
-    color: #444444;
-  }
-  
-  a {
-    color: $customprimary;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: $customprimary;
-    text-decoration: none;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Raleway", sans-serif;
-  }
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  display: 	grid;
+  min-height: 100vh;
+}
 
-  /*BOTON DE WHATSAPP*/
+a {
+  color: $customprimary;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $customprimary;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/*BOTON DE WHATSAPP*/
+
+  .whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 48px;
+  line-height: 75px;
+  transition: all 0.2s ease-in-out;
+  z-index: 9999;
+}
+
+.whatsapp:hover {
+  background-color: #128c7e;
+}
+
+@media(max-width: 420px){
+    .whatsapp{
+        width: 60px;
+        height: 60px;
+        font-size: 35px;
+        line-height: 60px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background-color: white;
+}
+
+.section-title {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 2.5vh;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #3b434a;
+  position: relative;
+  z-index: 2;
+}
+
+.section-title span {
+  position: absolute;
+  top: 30px;
+  color: #eef0f2;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 3vh;
+  text-transform: uppercase;
+  line-height: 0;
+}
+
+iframe{
+  padding-bottom: 1vw;
+}
+
+
+
+/*NAVBAR*/
   
-    .whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25d366;
-    color: #fff;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    font-size: 48px;
-    line-height: 75px;
-    transition: all 0.2s ease-in-out;
-    z-index: 9999;
-  }
+.custom-primary {
+  background-color: $custom-secondary !important;
+}
+
+.custom-secondary {
+  background: $customprimary;
+}
+
   
-  .whatsapp:hover {
-    background-color: #128c7e;
-  }
-  
-  @media(max-width: 420px){
-      .whatsapp{
-          width: 60px;
-          height: 60px;
-          font-size: 35px;
-          line-height: 60px;
-      }
-  }
-  
-  /*--------------------------------------------------------------
-  # Sections General
-  --------------------------------------------------------------*/
-  section {
-    padding: 60px 0;
-  }
-  
-  .section-bg {
-    background-color: white;
-  }
-  
-  .section-title {
-    text-align: center;
-    padding: 30px 0;
-    position: relative;
-  }
-  
-  .section-title h2 {
-    font-size: 2.5vh;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    padding-bottom: 0;
-    color: #3b434a;
-    position: relative;
-    z-index: 2;
-  }
-  
-  .section-title span {
-    position: absolute;
-    top: 30px;
-    color: #eef0f2;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    font-weight: 700;
-    font-size: 3vh;
-    text-transform: uppercase;
-    line-height: 0;
-  }
-  
-  iframe{
-    padding-bottom: 1vw;
-  }
-  
-  
-  
-  /*NAVBAR*/
-    
-  .custom-primary {
-    background-color: $custom-secondary !important;
-  }
-  
-  .custom-secondary {
-    background: $customprimary;
-  }
-  
-    
-    @media (max-width: 430px) {
-      .img-responsive{
-        width: 90px !important;
-      }
-      }
-    
-      @media (max-width: 391px) {
-        .img-responsive{
-          width: 80px !important;
-        }
-        }
-    
-    .navbar-brand{
-      margin: 0 ;
-      padding: 0;
+  @media (max-width: 430px) {
+    .img-responsive{
+      width: 90px !important;
+    }
     }
   
-  /*--------------------------------------------------------------
-  # Footer
-  --------------------------------------------------------------*/
-  #footer {
-    background: #2c4a54 top center no-repeat;
-    background-size: cover;
-    color: #fff;
-    font-size: 14px;
-    text-align: center;
-    padding: 80px 0;
-    position: relative;
-  }
+    @media (max-width: 391px) {
+      .img-responsive{
+        width: 80px !important;
+      }
+      }
   
-  #footer::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: $custom-secondary(156, 63, 63, 0.6);
-  }
-  
-  #footer .container {
-    position: relative;
-  }
-  
-  #footer h3 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #fff;
-    position: relative;
-    font-family: "Satisfy", serif;
+  .navbar-brand{
+    margin: 0 ;
     padding: 0;
-    margin: 0 0 15px 0;
   }
-  
-  #footer p {
-    font-size: 15;
-    font-style: italic;
-    padding: 0;
-    margin: 0 0 40px 0;
-  }
-  
-  #footer .social-links {
-    margin: 0 0 40px 0;
-  }
-  
-  #footer .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: $customprimary;
-    color: #fff;
-    line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-  }
-  
-  #footer .social-links a:hover {
-    background: #f3a200;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  #footer .copyright {
-    margin: 0 0 5px 0;
-  }
-  
-  #footer .credits {
-    font-size: 13px;
-  }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #2c4a54 top center no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 0;
+  padding-top: 40px;
+  position: relative;
+}
+
+#footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: $custom-secondary(156, 63, 63, 0.6);
+}
+
+#footer .container {
+  position: relative;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  font-family: "Satisfy", serif;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: $customprimary;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: $customprimary;
+  color: #fff;
+  text-decoration: none;
+}
